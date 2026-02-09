@@ -1,0 +1,25 @@
+body {
+    background: radial-gradient(circle at 20% 20%, #1a2538 0%, transparent 25%),
+                radial-gradient(circle at 80% 0%, #102040 0%, transparent 25%),
+                #0d121f;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.card {
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+#articulos .card,
+#articulos .card:hover {
+  transform: none !important;
+}
